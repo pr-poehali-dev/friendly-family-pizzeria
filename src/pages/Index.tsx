@@ -386,7 +386,7 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      +7 (495) 123-45-67
+                      8 988 528 85 52
                     </p>
                   </CardContent>
                 </Card>
@@ -460,7 +460,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-background/80">
-                <li>+7 (495) 123-45-67</li>
+                <li>8 988 528 85 52</li>
                 <li>info@семья.рф</li>
                 <li>г. Курганинск, ул. Первомайская, 3К</li>
               </ul>
