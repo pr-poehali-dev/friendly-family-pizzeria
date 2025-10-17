@@ -361,72 +361,46 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <div className="space-y-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                      <Icon name="MapPin" className="text-primary" />
-                      Адрес
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      г. Курганинск, ул. Первомайская, д. 3К
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                      <Icon name="Phone" className="text-primary" />
-                      Телефон
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      8 988 528 85 52
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                      <Icon name="Clock" className="text-primary" />
-                      Режим работы
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      Ежедневно с 10:00 до 23:00
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <Card>
+                <CardHeader>
+                  <div className="mx-auto mb-4 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Icon name="MapPin" size={32} className="text-primary" />
+                  </div>
+                  <CardTitle className="text-center">Адрес</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground">
+                    г. Курганинск, ул. Первомайская, д. 3К
+                  </p>
+                </CardContent>
+              </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Напишите нам</CardTitle>
-                  <CardDescription>
-                    Оставьте заявку и мы свяжемся с вами
-                  </CardDescription>
+                  <div className="mx-auto mb-4 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Icon name="Phone" size={32} className="text-primary" />
+                  </div>
+                  <CardTitle className="text-center">Телефон</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <Input placeholder="Ваше имя" />
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground">
+                    8 988 528 85 52
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="mx-auto mb-4 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Icon name="Clock" size={32} className="text-primary" />
                   </div>
-                  <div>
-                    <Input type="tel" placeholder="Телефон" />
-                  </div>
-                  <div>
-                    <Textarea placeholder="Сообщение" rows={4} />
-                  </div>
-                  <Button className="w-full">
-                    <Icon name="Send" size={16} className="mr-2" />
-                    Отправить
-                  </Button>
+                  <CardTitle className="text-center">Режим работы</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground">
+                    Ежедневно с 10:00 до 23:00
+                  </p>
                 </CardContent>
               </Card>
             </div>
