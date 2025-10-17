@@ -372,7 +372,7 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      г. Москва, ул. Семейная, д. 25
+                      г. Курганинск, ул. Первомайская, д. 3К
                     </p>
                   </CardContent>
                 </Card>
@@ -462,7 +462,7 @@ const Index = () => {
               <ul className="space-y-2 text-background/80">
                 <li>+7 (495) 123-45-67</li>
                 <li>info@семья.рф</li>
-                <li>г. Москва, ул. Семейная, 25</li>
+                <li>г. Курганинск, ул. Первомайская, 3К</li>
               </ul>
             </div>
           </div>
