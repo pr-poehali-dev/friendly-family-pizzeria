@@ -146,7 +146,7 @@ const Index = () => {
         <section id="home" className="relative py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/20 to-background"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl mx-auto text-center">
               <div className="animate-fade-in">
                 <Badge className="mb-4 bg-accent">Семейная атмосфера</Badge>
                 <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -156,7 +156,7 @@ const Index = () => {
                   Готовим с любовью, как для своей семьи. Свежие ингредиенты,
                   проверенные рецепты и тёплая атмосфера ждут вас!
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" onClick={() => scrollToSection('menu')}>
                     <Icon name="UtensilsCrossed" size={20} className="mr-2" />
                     Смотреть меню
@@ -166,13 +166,6 @@ const Index = () => {
                     Как добраться
                   </Button>
                 </div>
-              </div>
-              <div className="animate-scale-in">
-                <img
-                  src="https://cdn.poehali.dev/projects/4e0be589-5aff-42ae-8b57-0e07507095b0/files/1d5c4a27-a20b-44b4-8f8a-02db5de52d01.jpg"
-                  alt="Семья за столом"
-                  className="rounded-2xl shadow-2xl w-full h-auto"
-                />
               </div>
             </div>
           </div>
