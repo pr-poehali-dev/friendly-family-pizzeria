@@ -10,38 +10,39 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const menuItems = [
-    {
-      id: 1,
-      name: 'Маргарита',
-      description: 'Томатный соус, моцарелла, базилик',
-      price: 450,
-      category: 'pizza',
-      image: 'https://cdn.poehali.dev/projects/4e0be589-5aff-42ae-8b57-0e07507095b0/files/f3abaea0-5388-406d-b212-077bc7d0a96f.jpg'
-    },
-    {
-      id: 2,
-      name: 'Семейная',
-      description: 'Ветчина, грибы, помидоры, сыр',
-      price: 590,
-      category: 'pizza',
-      image: 'https://cdn.poehali.dev/projects/4e0be589-5aff-42ae-8b57-0e07507095b0/files/081a11a8-d492-431b-8dd4-dc9b59f40c67.jpg'
-    },
-    {
-      id: 3,
-      name: 'Пепперони',
-      description: 'Острая салями, моцарелла, томатный соус',
-      price: 520,
-      category: 'pizza',
-      image: 'https://cdn.poehali.dev/projects/4e0be589-5aff-42ae-8b57-0e07507095b0/files/f3abaea0-5388-406d-b212-077bc7d0a96f.jpg'
-    },
-    {
-      id: 4,
-      name: 'Четыре сыра',
-      description: 'Моцарелла, пармезан, дор блю, чеддер',
-      price: 650,
-      category: 'pizza',
-      image: 'https://cdn.poehali.dev/projects/4e0be589-5aff-42ae-8b57-0e07507095b0/files/081a11a8-d492-431b-8dd4-dc9b59f40c67.jpg'
-    }
+    { id: 1, name: 'Чикен', description: 'рис, нори, сыр, курица, огурец', price: 170, category: 'Фирменные роллы' },
+    { id: 2, name: 'Овощной Маки', description: 'рис, нори, сыр огурец, помидор, болгарский перец, салат айсберг', price: 200, category: 'Фирменные роллы' },
+    { id: 3, name: 'Филадельфия Маки', description: 'рис, нори, сыр, огурец, лосось', price: 300, category: 'Фирменные роллы' },
+    { id: 4, name: 'Эби Темпура', description: 'рис, нори, сыр, тигровая креветка х/к, масаго', price: 300, category: 'Фирменные роллы' },
+    { id: 5, name: 'Калифорния с крабом', description: 'рис, нори, масаго, сыр, снежный краб, огурец', price: 250, category: 'Фирменные роллы' },
+    { id: 6, name: 'Калифорния с креветкой', description: 'рис, нори, сыр масаго, креветка тигровая, огурец', price: 350, category: 'Фирменные роллы' },
+    { id: 7, name: 'Калифорния с лососем', description: 'рис, нори, лосось, масаго, сыр, огурец', price: 350, category: 'Фирменные роллы' },
+    { id: 8, name: 'Калифорния с тунцом', description: 'рис, нори, масаго, сыр, тунец, огурец', price: 400, category: 'Фирменные роллы' },
+    { id: 9, name: 'Осака', description: 'рис, нори, сыр, огурец, лосось х/к, спайси, масаго зеленая', price: 400, category: 'Фирменные роллы' },
+    { id: 10, name: 'Киото', description: 'рис, нори, креветка в темпуре, соус спайси, помидор, салат айсберг', price: 400, category: 'Фирменные роллы' },
+    { id: 11, name: 'Цезарь-ролл', description: 'рис, нори, курица, салат айсберг, курица, сыр, пармезан, чесно', price: 350, category: 'Фирменные роллы' },
+    { id: 12, name: 'Канада', description: 'рис, нори, лосось, угорь, сыр, огурец, унаги соус, кунжут', price: 450, category: 'Фирменные роллы' },
+    { id: 13, name: 'VIP', description: 'рис, нори, сыр, снежный краб, помидор, тигровая креветка', price: 500, category: 'Фирменные роллы' },
+    { id: 14, name: 'Филадельфия', description: 'рис, нори, сыр, лосось', price: 350, category: 'Фирменные роллы' },
+    { id: 15, name: 'Спайси курица с айсбергом', description: 'рис, нори, курица, сыр, салат айсберг, спайси соус', price: 350, category: 'Фирменные роллы' },
+    { id: 16, name: 'Филадельфия с креветкой', description: 'рис, нори, лосось, тигровая креветка, сыр', price: 400, category: 'Фирменные роллы' },
+    { id: 17, name: 'Филадельфия с угрем', description: 'рис, нори, лосось, угорь, сыр', price: 400, category: 'Фирменные роллы' },
+    { id: 18, name: 'Филадельфия копченая', description: 'рис, нори, сыр, огурец, лосось х/к', price: 450, category: 'Фирменные роллы' },
+    { id: 19, name: 'Дракон', description: 'рис, нори, сыр, авакадо, угорь, копченый лосось', price: 700, category: 'Фирменные роллы' },
+    { id: 20, name: 'Ролл с креветкой', description: 'рис, нори, креветка', price: 200, category: 'Классические роллы' },
+    { id: 21, name: 'Ролл с лососем', description: 'рис, нори, лосось', price: 250, category: 'Классические роллы' },
+    { id: 22, name: 'Ролл с авокадо', description: 'рис, нори, авокадо', price: 150, category: 'Классические роллы' },
+    { id: 23, name: 'Ролл с огурцом', description: 'рис, нори, огурец', price: 100, category: 'Классические роллы' },
+    { id: 24, name: 'Ролл с крабом', description: 'рис, нори, краб', price: 200, category: 'Классические роллы' },
+    { id: 25, name: 'Ролл с угрем', description: 'рис, нори, угорь, унаги соус, кунжут', price: 200, category: 'Классические роллы' },
+    { id: 26, name: 'Ролл с тунцом', description: 'рис, нори, тунец', price: 200, category: 'Классические роллы' },
+    { id: 27, name: 'Ролл с чукой', description: 'рис, нори, чука', price: 100, category: 'Классические роллы' },
+    { id: 28, name: 'WOK с морепродуктами', description: 'пшеничная лапша тигровыми креветками, мидиями, кальмаром и сочными овощами в устричном соусе', price: 400, category: 'WOK' },
+    { id: 29, name: 'WOK с курицей', description: 'пшеничная лапша с сочными овощами и нежной куриной грудкой в соусе терияки', price: 350, category: 'WOK' },
+    { id: 30, name: 'Карбонара', description: 'феттучини в сливочном соусе с обжаренными ломтиками бекона, под сырой поризкой', price: 450, category: 'Паста' },
+    { id: 31, name: 'С курицей и грибами', description: 'феттучини с сочным филе куриной грудки, шампиньонами в сливочном соусе, под сырной поризкой', price: 500, category: 'Паста' },
+    { id: 32, name: 'С морепродуктами', description: 'феттучини в сливочно-томатном соусе с мидиями, кальмарами и осминогами, под сырой поризкой', price: 500, category: 'Паста' },
+    { id: 33, name: 'Паста Том-Ям', description: 'феттучини с креветками и брокколи в остром соусе том-ям, под сырой поризкой', price: 500, category: 'Паста' }
   ];
 
   const promos = [
@@ -176,40 +177,41 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">Наше меню</h2>
               <p className="text-lg text-muted-foreground">
-                Каждая пицца приготовлена с любовью
+                Свежие роллы, вок и паста каждый день
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {menuItems.map((item, index) => (
-                <Card
-                  key={item.id}
-                  className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                    />
+            {['Фирменные роллы', 'Классические роллы', 'WOK', 'Паста'].map((category) => {
+              const categoryItems = menuItems.filter(item => item.category === category);
+              if (categoryItems.length === 0) return null;
+              
+              return (
+                <div key={category} className="mb-16">
+                  <h3 className="text-3xl font-bold mb-8 text-center">{category}</h3>
+                  <div className="max-w-4xl mx-auto space-y-4">
+                    {categoryItems.map((item) => (
+                      <Card key={item.id} className="hover:shadow-md transition-shadow">
+                        <CardContent className="p-6">
+                          <div className="flex justify-between items-start gap-4">
+                            <div className="flex-1">
+                              <h4 className="text-xl font-semibold mb-2">{item.name}</h4>
+                              <p className="text-muted-foreground text-sm">{item.description}</p>
+                            </div>
+                            <div className="flex items-center gap-4 flex-shrink-0">
+                              <span className="text-2xl font-bold text-primary whitespace-nowrap">{item.price} ₽</span>
+                              <Button size="sm">
+                                <Icon name="ShoppingCart" size={16} className="mr-2" />
+                                В корзину
+                              </Button>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
                   </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl">{item.name}</CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
-                      <Button size="sm">
-                        <Icon name="ShoppingCart" size={16} className="mr-2" />
-                        В корзину
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
