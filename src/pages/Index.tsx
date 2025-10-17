@@ -78,7 +78,7 @@ const Index = () => {
             <div className="flex items-center gap-2">
               <div className="text-3xl">🍕</div>
               <div>
-                <h1 className="text-2xl font-bold text-primary">ДРУЖНАЯ СЕМЬЯ</h1>
+                <h1 className="text-2xl font-bold text-primary brand-title">ДРУЖНАЯ СЕМЬЯ</h1>
                 <p className="text-sm text-muted-foreground">Пиццерия с душой</p>
               </div>
             </div>
@@ -407,7 +407,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="text-2xl">🍕</div>
-                <h3 className="text-xl font-bold">ДРУЖНАЯ СЕМЬЯ</h3>
+                <h3 className="text-xl font-bold brand-title">ДРУЖНАЯ СЕМЬЯ</h3>
               </div>
               <p className="text-background/80">
                 Пиццерия с душой и домашней атмосферой
